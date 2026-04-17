@@ -1,0 +1,33 @@
+use-cases/process-false-alert.md
+
+# Splunk Troubleshooting: False Process Down Alert Due to PID File Path Issue
+
+##  Problem
+An alert in Splunk indicated that a monitored process had stopped.
+
+However, manual verification showed that the process was running normally.
+
+## Investigation
+- Checked process status on server → running
+- Reviewed monitoring script → uses PID file to validate process
+- Verified PID file → present
+- Script unable to read PID file
+
+## Root Cause
+An extra space in the file path in the configuration file.
+
+This caused the script to fail in locating the PID file and incorrectly mark the process as stopped.
+
+## ✅ Solution
+Corrected the file path in configuration.
+
+After fix:
+- Script successfully detected PID
+- Alert stopped triggering
+
+## 📚 Key Learning
+Monitoring failures are not always system failures.
+
+Small configuration issues can lead to false alerts and unnecessary noise.
+
+##Splunk, Monitoring, Alerting, Troubleshooting, PID, Linux
