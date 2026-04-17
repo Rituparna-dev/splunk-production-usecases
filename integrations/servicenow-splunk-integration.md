@@ -35,8 +35,6 @@ After updating an incident in ServiceNow:
 - Data was immediately ingested into Splunk
 - Confirmed that the integration and ingestion pipeline were working correctly
 
----
-
 ## 📚 Key Concepts Demonstrated
 - Splunk Add-on configuration
 - API-based data ingestion
@@ -44,7 +42,11 @@ After updating an incident in ServiceNow:
 - Incremental data ingestion logic
 - ITSM workflow integration
 
----
+## 📸 Screenshots
+
+![Setup](../Servicenow 1.jpeg)
+![Addon](../servicenow2.jpeg)
+![Data](../Servicenow 3.jpeg)
 
 ## 🏷️ Tags
 Splunk, ServiceNow, Integration, Add-on, ITSM, Data Ingestion, sys_updated_on
