@@ -42,6 +42,7 @@ After updating an incident in ServiceNow:
 - Incremental data ingestion logic
 - ITSM workflow integration
 
+
 ## 📸 Screenshots
 
 ![Setup](../Servicenow 1.jpeg)
